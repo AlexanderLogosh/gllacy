@@ -1,0 +1,266 @@
+html,
+body {
+	min-width: 1200px;
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+	background: #849d8f url("../img/") no-repeat center top;
+  margin: 0;
+}
+
+.body-bg-1 {
+	background: #849d8f url("../img/slide-1.png") no-repeat center top;
+}
+
+.inner-page {
+	color: #000000;
+	background: ;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.container {
+	width: 1146px;
+	margin: 0 auto;
+	padding: 0 27px;
+
+}
+
+.inner-page {
+	
+}
+
+.disabled {
+	display: none;
+}
+/*----------------------------------------- Header -----------------------------------------*/
+
+.main-header {
+	padding-top: 10px;
+}
+.main-navigation {
+	float: left;
+	width: 800px;
+}
+
+.main-navigation .logo {
+	display: inline-block;
+	float: left;
+	width: 154px;
+	height: 64px;
+	margin-right: 14px;
+}
+
+.main-navigation ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+}
+
+.main-navigation li {
+	display: inline-block;
+	margin-left: 2px;
+	margin-top: 12px;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 700;
+	vertical-align: top;
+}
+
+.main-navigation a {
+	display: block;
+	position: relative;
+	padding: 6px 14px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.main-navigation a::after {
+	content: "";
+	position: relative;
+	bottom: 2px;
+	display: block;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.main-navigation a:hover {
+	color: #333333;
+	background: #f7f6f3;
+	border-radius:  20px;
+}
+
+.main-navigation a:active {
+	box-shadow: inset 0 2px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.main-navigation .active {
+	color: #ffffff;
+	background: #d07058;
+}
+
+.header-right-block {
+	float: right;
+	font-size: 0;
+}
+
+.header-right-block a {
+	display: inline-block;
+	padding: 6px;
+	margin-left: 10px;
+	margin-top: 13px;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 500;
+	vertical-align: top;
+	text-align: right;
+	text-decoration: none;
+	border-radius:  20px;
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.header-right-block .search {
+	padding: 0;
+	width: 32px;
+	height: 32px;
+	background: rgba(255, 255, 255, 0.2) url("");
+}
+
+.header-right-block .enter {
+	padding-left: 45px;
+}
+
+.header-right-block .cart	{
+	padding-left: 45px;
+}
+
+/*----------------------------------------- Index.html -----------------------------------------*/
+.schedule {
+	text-align: right;
+	margin-bottom: 272px;
+}
+
+.schedule > span {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: 700;
+}
+
+.schedule  .number {
+	display: inline-block;
+	font-size: 22px;
+	line-height: 30px;
+	font-weight: 900;
+}
+
+.slide  {
+	width: 680px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+[class^="main-promo-"] {
+	display: inline-block;
+	width: 680px;
+	margin: 0;
+	margin-bottom: 31px;
+	font-size: 60px;
+	line-height: 62px;
+	font-weight: 500;
+	text-shadow: 2px 6px px #000000;
+}
+
+.slide-main-btn {
+	padding: 13px 45px;
+	border-radius:  40px;
+	background-image: linear-gradient(#f26843, #e74a35);
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 31px;
+	line-height: 62px;
+	font-weight: 700;
+}
+
+.slide-btns {
+	position: relative;
+	left: 0;
+	bottom: 46px;
+}
+
+.gifts {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	margin-top: 22px;
+	margin-bottom: 40px;
+}
+
+[class^="gifts-"] {
+	width: 560px;
+	height: 229px;
+	box-sizing: border-box;
+	padding: 20px;
+	padding-top: 16px;
+	padding-bottom: 23px;
+}
+
+[class^="gifts-"] > h2 {
+	font-size: 35px;
+	line-height: 43px;
+	font-weight: 700;
+	margin: 0;
+}
+
+.gifts-left {
+	float: left;
+	background: url("../img/rassbery.png") no-repeat;
+}
+
+.gifts-right {
+	float: right;
+	background: url("../img/chocolate.png") no-repeat;
+}
+
+.items {
+	font-size: 0;
+}
+
+.items .item	{
+	display: inline-block;
+	width: 267px;
+	margin-right: 26px;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+}
+
+.items .item:nth-child(4n)	{
+	margin-right: 0;
+}
+
+
+.about {
+	color: #323232;
+	background: url("../img/wafes.jpg");
+	border-radius: 10px;
+}
+
+.about-left-column {
+	float: ;
+	width: ;
+	
+}
+
+
+
+
+
+
+.disabled {
+	display: none;
+}
