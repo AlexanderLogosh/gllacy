@@ -77,6 +77,7 @@ body {
 	padding: 6px 14px;
 	color: #ffffff;
 	text-decoration: none;
+
 }
 
 .main-navigation a::after {
@@ -139,6 +140,7 @@ body {
 }
 
 /*----------------------------------------- Index.html -----------------------------------------*/
+
 .schedule {
 	text-align: right;
 	margin-bottom: 272px;
@@ -175,7 +177,7 @@ body {
 	text-shadow: 2px 6px px #000000;
 }
 
-.slide-main-btn {
+.index-main-slider .slide-main-btn {
 	padding: 13px 45px;
 	border-radius:  40px;
 	background-image: linear-gradient(#f26843, #e74a35);
@@ -194,13 +196,14 @@ body {
 
 .gifts {
 	font-size: 18px;
-	line-height: 24px;
+	line-height: 20px;
 	font-weight: 700;
 	margin-top: 22px;
 	margin-bottom: 40px;
 }
 
 [class^="gifts-"] {
+	position: relative;
 	width: 560px;
 	height: 229px;
 	box-sizing: border-box;
@@ -226,35 +229,226 @@ body {
 	background: url("../img/chocolate.png") no-repeat;
 }
 
+.btn {
+	padding: 12px 22px;
+	border-radius:  40px;
+	background-image: linear-gradient(#f26843, #e74a35);
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.btn:hover {
+	-webkit-filter: brightness(120%);
+	box-shadow: inset 0 -2px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.btn:active {
+	-webkit-filter: brightness(90%);
+	box-shadow: inset 0 2px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+[class^="gifts-"] > .btn {
+	position: absolute;
+	right: 21px;
+	bottom: 18px
+}
+
 .items {
 	font-size: 0;
+	margin-bottom: 40px;
 }
 
 .items .item	{
+	position: relative;
 	display: inline-block;
 	width: 267px;
 	margin-right: 26px;
-	font-size: 16px;
-	line-height: 22px;
-	font-weight: 500;
+	text-align: center;
 }
 
 .items .item:nth-child(4n)	{
 	margin-right: 0;
 }
 
+ .hit-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+ } 
+.item-price {
+	position: absolute;
+	top: 205px;
+	left: 0;
+	font-size: 45px;
+	line-height: 53px;
+	font-weight: 700;
+	font-family: 'Roboto', sans-serif;
+}
+
+.item-feature {
+	dispaly: inline;
+	font-size: 16px;
+	color: #ffffff;
+	line-height: 21px;
+	font-weight: 500;
+	text-align: center;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.item-feature:hover,
+.item-feature:active {
+	color: #ffbc9e;
+	border-bottom: 1px solid rgba(255, 188, 158, 0.6);
+}
 
 .about {
+	padding: 21px 30px 21px 26px;
+	height: 306px;
 	color: #323232;
-	background: url("../img/wafes.jpg");
-	border-radius: 10px;
+	background: url("../img/wafes.png") no-repeat;
 }
 
 .about-left-column {
-	float: ;
-	width: ;
-	
+	float: left;
+	width: 541px;
+	box-sizing: border-box;
+	padding-left: 57px;
 }
+
+.about-right-column {
+	float: right;
+	width: 541px;
+	box-sizing: border-box;
+	padding-left: 56px;
+}
+
+.about .about-title {
+	margin: 0;
+	margin-bottom: 15px;
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 500;
+}
+
+.about p {
+	margin: 0;
+	margin-bottom: 23px;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+}
+
+.news {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #5a5a5a;
+}
+
+.blog {
+	float: left;
+	width: 560px;
+	height: 220px;
+	box-sizing: border-box;
+	padding: 23px 21px; 
+	background: url("../img/blog_bg.png") no-repeat;
+}
+
+.blog span {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+
+.blog-link {
+	color: #5a5a5a;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 700;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(90,90, 90, 0.6);
+}
+
+
+.blog-link:hover,
+.blog-link:active {
+	color: #ec593c;
+	border-bottom: 1px solid rgba(236, 89, 60, 0.6);
+}
+
+.newsletter {
+	float: right;
+	width: 560px;
+	height: 220px;
+	box-sizing: border-box;
+	padding: 34px 27px; 
+	background: url("../img/substrate.png") no-repeat;
+}
+
+.newsletter p {
+	margin: 0;
+	margin-bottom: 42px;
+}
+
+.newsletter .mail {
+	display: inline-block;
+	width: 346px;
+	height: 49px;
+	margin: 0;
+	padding: 0 10px;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #5a5a5a;
+	border: 1px solid #d3d3d2;
+	border-radius: 2px;
+}
+
+.newsletter .btn {
+	float: right;
+	padding: 10.5px 21px;
+	font-size: 17px;
+	margin: 0;
+}
+
+
+
+.map {
+	width: 1200px;
+	height: 430px;
+	box-sizing: border-box;
+	margin: auto;
+	margin-top: 40px;
+	padding: 20px 27px;
+	background: url("../img/map.jpg") no-repeat;
+}
+
+.adress {
+	float: right;
+	width: 302px;
+	height: 305px;
+	padding: 30px 25px;
+	box-sizing: border-box;
+	background: #fefefd;
+	border-radius: 15px;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 400;
+	color: #343434;
+}
+
+
+
+
+
 
 
 
