@@ -446,6 +446,23 @@ body {
 }
 
 
+.adress b {
+	display: inline-block;
+	margin: 1px 0;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+}
+
+.adress .adress-bold {
+	margin-bottom: 18px;
+}
+
+.adress .btn {
+	margin-top: 24px;
+	margin-bottom: 30px;
+}
+
 
 
 
