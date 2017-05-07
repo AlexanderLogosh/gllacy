@@ -11,6 +11,16 @@ body {
 	background: #849d8f url("../img/slide-1.png") no-repeat center top;
 }
 
+.body-bg-2 {
+	background: #8996a6 url("../img/slide-2.png") no-repeat center top;
+}
+
+.body-bg-3 {
+	background: #9d8b84 url("../img/slide-3.png") no-repeat center top;
+}
+
+
+
 .inner-page {
 	color: #000000;
 	background: ;
@@ -125,18 +135,57 @@ body {
 }
 
 .header-right-block .search {
-	padding: 0;
+	padding: 8px;
 	width: 32px;
 	height: 32px;
+	box-sizing: border-box;
 	background: rgba(255, 255, 255, 0.2) url("");
 }
 
-.header-right-block .enter {
+.header-right-block .enter ,
+.header-right-block .cart	 {
+	position: relative;
 	padding-left: 45px;
 }
 
-.header-right-block .cart	{
-	padding-left: 45px;
+.header-right-block .enter {
+	padding-right: 16px;
+}
+.header-right-block .cart {
+	padding-right: 34px;
+}
+
+
+.cart div::before {
+	content: "";
+	display: none;
+	width: 14px;
+	height: 11px;
+	background: #ec573b;
+}
+.cart:hover div::before {
+	display: inline-block;
+	position: absolute;
+	top: 9px;
+	left: 21px;
+}
+
+
+.search:hover > .sprite-header > .cls-1,
+.enter:hover > .sprite-header > .cls-1,
+.cart:hover > .sprite-header > .cls-1 {
+	fill: #333;
+}
+
+.enter .sprite-header,
+.cart .sprite-header {
+	position: absolute;
+	left: 16px;
+}
+
+.header-right-block a:hover {
+	color: #313131;
+	background: rgba(255, 255, 255, 0.9);
 }
 
 /*----------------------------------------- Index.html -----------------------------------------*/
@@ -192,6 +241,34 @@ body {
 	position: relative;
 	left: 0;
 	bottom: 46px;
+}
+
+.radio-btn input[type="radio"] {
+	display: none;
+}
+ 
+.radio-btn {
+	display: inline-block;
+	cursor: pointer;
+	margin-right: 8px;
+}
+
+.radio-btn input[type="radio"] + .radio-indicator {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+}
+
+.radio-btn input[type="radio"] + .radio-indicator:hover {
+	background: rgba(255, 255, 255, 0.4);
+}
+
+.radio-btn input[type="radio"]:checked + .radio-indicator {
+	content: "";
+	border-radius: 50%;
+	background-color: #fff;
 }
 
 .gifts {
@@ -309,7 +386,8 @@ body {
 }
 
 .about {
-	padding: 21px 30px 21px 26px;
+	position: relative;
+	padding: 26px 21px 26px 21px ;
 	height: 306px;
 	color: #323232;
 	background: url("../img/wafes.png") no-repeat;
@@ -333,7 +411,7 @@ body {
 	margin: 0;
 	margin-bottom: 15px;
 	font-size: 24px;
-	line-height: 32px;
+	line-height: 30px;
 	font-weight: 500;
 }
 
@@ -343,6 +421,30 @@ body {
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 400;
+}
+
+.about-img-left1 {
+	position: absolute;
+	top: 94px;
+	left: 21px;
+}
+
+.about-img-left2 {
+	position: absolute;
+	top: 182px;
+	left: 21px;
+}
+
+.about-img-right1 {
+	position: absolute;
+	top: 94px;
+	left: 586px;
+}
+
+.about-img-right2 {
+	position: absolute;
+	top: 182px;
+	left: 586px;
 }
 
 .news {
@@ -465,12 +567,88 @@ body {
 
 
 
+/*----------------------------------------- footer -----------------------------------------*/
+
+.main-footer {
+	min-height: 103px;
+}
+
+.social {
+	float: left;
+	margin-top: 36px;
+	margin-right: 200px;
+	font-size: 0;
+}
+
+.social-btn {
+	display: inline-block;
+	margin-right: 11px;
+	width: 31px;
+	height: 31px;
+	border: 3px solid rgba(255, 255, 255, 0.5);
+	border-radius: 50%;
+}
+
+.social-btn:hover	{
+	border: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+.social-btn:hover .cls-3 {
+	opacity: 1;
+}
+ 
+ .social-btn:active	{
+	border: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+.social-btn:active .cls-3 {
+	opacity: 0.8;
+}
+
+.details {
+	float: left;
+	position: relative;
+	margin-top: 36px;
+}
+
+.details-column {
+	display: inline-block;
+	padding-left: 25px;
+}
+
+.heart {
+	position: absolute;
+	top: 5px;
+	left: 6px;
+}
+
+.details a {
+	font-size: 13;
+	line-height: 22px;
+	font-weight: 400;
+	text-decoration: none;
+	color: #ffffff;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
 
 
 
 
 
+.copyright {
+	float: right;
+	width: 189px;
+	margin-top: 20px;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 500;
+}
 
+.copyright a {
+	text-decoration: none;
+	color: #ffffff;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
 
 .disabled {
 	display: none;
