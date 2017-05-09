@@ -15,13 +15,13 @@
 						<img src="img/logo.png" alt="Лого" width="154" height="64">
 					</div>
 					<ul>
-						<li><a href="catalog.html">Каталог</a>
+						<li class=""><a href="catalog.html">Каталог</a>
 							<ul class="drop-menu disabled">
-								<li>Новинки</li>
-								<li><a href="#">Сливочное</a></li>
-								<li><a href="#">Щербеты</a></li>
-								<li><a href="#">Фруктовый лед</a></li>
-								<li><a href="#">Мелорин</a></li>
+								<li class="title">Новинки</li>
+								<li><a href="#" class="drop-menu-item">Сливочное</a></li>
+								<li><a href="#" class="drop-menu-item active-drop-menu-item">Щербеты</a></li>
+								<li><a href="#" class="drop-menu-item">Фруктовый лед</a></li>
+								<li><a href="#" class="drop-menu-item">Мелорин</a></li>
 							</ul>
 						</li>
 						<li><a href="#">Доставка и оплата</a></li>
@@ -30,40 +30,44 @@
 				</nav>
 				<div class="header-right-block">
 					<a href="#" class="search"><svg class="sprite-header" xmlns="http://www.w3.org/2000/svg" width="16.687" height="16.688" viewBox="0 0 16.687 16.688"><defs><style>.cls-1 { fill: #fff; fill-rule: evenodd; }</style></defs><path id="Лупа" class="cls-1" d="M11.936 10.497h-.755l-.264-.261a6.212 6.212 0 1 0-.675.675l.263.262v.755l4.773 4.76 1.423-1.422zm-5.731 0a4.291 4.291 0 1 1 4.3-4.291 4.294 4.294 0 0 1-4.3 4.291z"/></svg></a>
-					<div class="popup-search  disabled">
+					<div class="popup-search disabled">
 						<form action="#" method="get">
-							<input type="text" name="search" value="Что ищем?">
+							<input type="search" name="search" value="Что ищем?">
 						</form>
 					</div>
-
-
 					<a href="#" class="enter"><svg class="sprite-header" xmlns="http://www.w3.org/2000/svg" width="20.063" height="19" viewBox="0 0 20.063 19"><defs><style>.cls-1 { fill: #fff; fill-opacity: 0.99; fill-rule: evenodd; }</style></defs><path id="Вход" class="cls-1" d="M3 3.968v-.96a3 3 0 0 1 3-3h11.059a3 3 0 0 1 3 3v12.978a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V15h2v2h13V2H5v1.968H3zm-3 8.046h6.029v2.743l7.027-5.3-7.027-5.3V6.9H0v5.114z"/></svg>Вход</a>
-					<div class="popup-enter  disabled">
+					<div class="popup-enter disabled">
 						<form action="#" method="post">
 							<input type="text" name="mail" value="Электронная почта">
-							<input type="text" name="password" value="Пароль">
+							<input type="text" name="password" value="Пароль"><br>
 							<button class="btn" type="submit">Войти</button>
+							<div class="link-enter">
+								<a href="#">Забыли пароль?</a><br>
+								<a href="#">Новая регистрация</a>
+							</div>
 						</form>
 					</div>
-
-
 					<a href="#" class="cart"><div></div><svg class="sprite-header" xmlns="http://www.w3.org/2000/svg" width="20.63" height="19.719" viewBox="0 0 20.63 19.719"><defs><style>.cls-1 { fill: #fff; fill-rule: evenodd; }</style></defs><path id="Корзина" class="cls-1" d="M20.58 4.429l-1.21 8.912a2.025 2.025 0 0 1-1.88 1.635H6.61a2.025 2.025 0 0 1-1.88-1.635L3.26 3.054a3.738 3.738 0 0 1-.13-1.055H1a1 1 0 0 1 0-2h4a.992.992 0 0 1 .1 1.98h13.97c1.1 0 1.77 1.131 1.51 2.45zM6.73 12.947l-1.31-9h13.2l-.03.2-1.18 8.788a.033.033 0 0 0-.01.014H6.73zm.52 3.009a1.874 1.874 0 1 1-1.88 1.874 1.874 1.874 0 0 1 1.88-1.874zm9 0a1.874 1.874 0 1 1-1.88 1.874 1.874 1.874 0 0 1 1.88-1.874z"/></svg>Пусто</a>
-					<div class="popup-cart  disabled">
+					<div class="popup-cart clearfix disabled">
 						<div class="cart-item">
-							<button class="delete"></button>
-							<span>Пломбир с апельсиновым джемом</span>
-							<span><b>1,5 кг</b>x 200 руб</span>
-							<span>300 руб</span>
+							<div class="cross delete-item"></div>
+							<img src="img/items/1.png" width="33" height="33">
+							<span class="name">Пломбир с апельсиновым джемом</span>
+							<span class="price">1,5 кг <span>x 200 руб</span></span>
+							<span class="total-price">300 руб</span>
 						</div>
 						<div class="cart-item">
-							<button class="delete"></button>
-							<span>Клубничный пломбир с присыпкой из белого шоколада</span>
-							<span><b>1,5 кг</b>x 300 руб</span>
-							<span>450 руб</span>
+							<div class="cross delete-item"></div>
+							<img src="img/items/3.png" width="33" height="33">
+							<span class="name">Клубничный пломбир с присыпкой из белого шоколада</span>
+							<span class="price">1,5 кг <span>x 300 руб</span></span>
+							<span class="total-price">450 руб</span>
 						</div>
 						<hr>
-						<span class="amount">Итого: 750 руб.</span>
-						<a class="btn">Оформить заказ</a>
+						<div class="amount-description">
+							<span>Итого:</span><span class="amount">750 руб.</span>
+						</div>
+						<button class="btn" type="submit">Оформить заказ</button>
 					</div>
 				</div>
 			</div>
@@ -114,24 +118,28 @@
 					<img src="img/hit.png" class="hit-img" alt="">
 					<span class="item-price">310&#8381;/кг</span>
 					<a href="#" class="item-feature">Сливочное с апельсиновым <br>джемом и цитрусовой стружкой</a>
+					<a class="item-btn btn" href="#">Быстрый просмотр</a>
 				</div>
 				<div class="item item-2">
 					<img src="img/items/2.png" width="267"  alt="">
 					<img src="img/hit.png" class="hit-img"  alt="">
 					<span class="item-price">380&#8381;/кг</span>
 					<a href="#" class="item-feature">Сливочно-кофейное с кусочками <br>шоколада</a>
+					<a class="item-btn btn" href="#">Быстрый просмотр</a>
 				</div>
 				<div class="item item-3">
 					<img src="img/items/3.png" width="267"  alt="">
 					<img src="img/hit.png" class="hit-img"  alt="">
 					<span class="item-price">355&#8381;/кг</span>
 					<a href="#" class="item-feature">Сливочно-клубничное с <br>присыпкой из белого шоколада</a>
+					<a class="item-btn btn" href="#">Быстрый просмотр</a>
 				</div>
 				<div class="item item-4">
 					<img src="img/items/4.png" width="267"  alt="">
 					<img src="img/hit.png" class="hit-img"  alt="">
 					<span class="item-price">415&#8381;/кг</span>
 					<a href="#" class="item-feature">Сливочное крем-брюле с <br>карамельной подливкой</a>
+					<a class="item-btn btn" href="#">Быстрый просмотр</a>
 				</div>
 			</div>
 			<div class="about clearfix">
@@ -173,6 +181,15 @@
 							<button type="submit" class="btn">Отправить</button>
 						</form>
 				</div>
+			</div>
+			<div class="popup-feedback disabled">
+				<form action="#" method="post">
+					<h2>Мы обязательно вам ответим!</h2>
+					<input type="text" name="name" value="Как вас зовут?">
+					<input type="text" name="mail" value="Ваша почта для ответа?">
+					<textarea name="about-yourself" id="" cols="30" rows="10">Напишите что-нибудь...</textarea>
+					<button class="btn" type="submit">Отправить</button>
+				</form>
 			</div>
 			</div>
 			<div class="map">
